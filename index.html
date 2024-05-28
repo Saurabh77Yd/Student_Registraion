@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Student Registration
+        System.
+    </title>
+    <link rel="icon" href="Image&Video/favicon.png">
+    <!-- ==add style page== -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ==add font awosme icon == -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- ===Heading of Page start=== -->
+    <h1 id="heading">Student Registration System</h1>
+    <!-- =====Heading of page End===== -->
+    <table id="form_table">
+        <tr class="table_row">
+            <td>
+                <!-- =========Student form start ============== -->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Student Name*</label><label class="validation-error hide"
+                            id="studentNameValidationError">This
+                            field is required.</label>
+                        <input type="text" name="studentName" id="studentName">
+                    </div>
+                    <div>
+                        <label>Student ID*</label>
+                        <input type="text" name="stu_ID" id="stu_ID" required>
+                    </div>
+                    <div>
+                        <label>Email ID*</label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label>Contact Number*</label>
+                        <input type="text" name="con_Num" id="con_Num" required>
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <!-- =======Student form end=========== -->
+
+            <!--  ====== Form value table Start======= -->
+            <td>
+                <table class="list" id="studentsList">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student ID</th>
+                            <th>Email</th>
+                            <th>Contact Number</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+            <!--  ====== Form value table End======= -->
+        </tr>
+    </table>
+    <!--  ======Linkt Javascript==== -->
+    <script src="script.js"></script>
+</body>
+
+</html>
